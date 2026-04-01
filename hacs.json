@@ -1,5 +1,8 @@
 {
   "name": "Tineco Card",
+  "content_in_root": false,
+  "filename": "tineco-card.js",
   "render_readme": true,
-  "filename": "dist/tineco-card.js"
+  "homeassistant": "2024.8.0",
+  "hide_default_branch": false
 }
