@@ -1,0 +1,92 @@
+{
+  "card": {
+    "online": "Online",
+    "offline": "Offline",
+    "floor_cleaner": "Floor Cleaner"
+  },
+  "status": {
+    "cleaning": "Cleaning",
+    "running": "Running",
+    "working": "Working",
+    "charging": "Charging",
+    "docked": "Docked",
+    "standby": "Standby",
+    "idle": "Ready",
+    "ready": "Ready",
+    "paused": "Paused",
+    "error": "Error",
+    "unknown": "Unknown"
+  },
+  "sensors": {
+    "battery": "Battery",
+    "fresh_water": "Fresh Water",
+    "waste_water": "Waste Water",
+    "brush": "Brush"
+  },
+  "pills": {
+    "charging": "Charging",
+    "battery_low": "Low battery"
+  },
+  "controls": {
+    "title": "Controls",
+    "cleaning_method": "Cleaning Method",
+    "running_speed": "Speed",
+    "suction_power": "Suction Power",
+    "max_power": "MAX Power",
+    "max_spray": "MAX Spray",
+    "volume": "Volume",
+    "water_mode": "Water Mode",
+    "sound": "Sound",
+    "light": "Light",
+    "on": "ON",
+    "off": "OFF"
+  },
+  "tanks": {
+    "fresh": "Fresh Water",
+    "waste": "Waste Water"
+  },
+  "footer": {
+    "firmware": "FW",
+    "api": "API"
+  },
+  "editor": {
+    "sections": {
+      "visibility": "Visible sections",
+      "image": "Custom image",
+      "sensors": "Sensors",
+      "controls": "Controls"
+    },
+    "image_placeholder": "/local/tineco.png",
+    "image_tip": "Leave empty to use the built-in SVG drawing",
+    "show": {
+      "image": "Image",
+      "status": "Status",
+      "battery": "Battery",
+      "tanks": "Tanks",
+      "pills": "Pills",
+      "controls": "Controls",
+      "footer": "Footer"
+    },
+    "entities": {
+      "battery": "Battery",
+      "status": "Vacuum Status",
+      "charging": "Charging",
+      "online": "Online",
+      "brush_roller": "Brush Roller",
+      "model": "Model",
+      "fresh_water": "Fresh Water",
+      "waste_water": "Waste Water",
+      "firmware": "Firmware",
+      "api_version": "API Version",
+      "cleaning_method": "Cleaning Method",
+      "running_speed": "Speed",
+      "suction_mode_power": "Suction Power",
+      "max_mode_power": "MAX Power",
+      "max_mode_spray": "MAX Spray Volume",
+      "sound_volume": "Sound Volume",
+      "water_mode": "Water Mode",
+      "sound_enabled": "Sound On/Off",
+      "floor_brush_light": "Floor Light"
+    }
+  }
+}
