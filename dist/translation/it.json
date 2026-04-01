@@ -1,0 +1,92 @@
+{
+  "card": {
+    "online": "Online",
+    "offline": "Offline",
+    "floor_cleaner": "Lavapavimenti"
+  },
+  "status": {
+    "cleaning": "Pulizia in corso",
+    "running": "In azione",
+    "working": "In azione",
+    "charging": "In carica",
+    "docked": "In base",
+    "standby": "Standby",
+    "idle": "Pronto",
+    "ready": "Pronto",
+    "paused": "In pausa",
+    "error": "Errore",
+    "unknown": "Sconosciuto"
+  },
+  "sensors": {
+    "battery": "Batteria",
+    "fresh_water": "Acqua Pulita",
+    "waste_water": "Acqua Sporca",
+    "brush": "Spazzola"
+  },
+  "pills": {
+    "charging": "In Carica",
+    "battery_low": "Batteria bassa"
+  },
+  "controls": {
+    "title": "Controlli",
+    "cleaning_method": "Metodo Pulizia",
+    "running_speed": "Velocità",
+    "suction_power": "Potenza Asp.",
+    "max_power": "MAX Power",
+    "max_spray": "MAX Spray",
+    "volume": "Volume",
+    "water_mode": "Water Mode",
+    "sound": "Suono",
+    "light": "Luce",
+    "on": "ON",
+    "off": "OFF"
+  },
+  "tanks": {
+    "fresh": "Acqua Pulita",
+    "waste": "Acqua Sporca"
+  },
+  "footer": {
+    "firmware": "FW",
+    "api": "API"
+  },
+  "editor": {
+    "sections": {
+      "visibility": "Sezioni visibili",
+      "image": "Immagine custom",
+      "sensors": "Sensori",
+      "controls": "Controlli"
+    },
+    "image_placeholder": "/local/tineco.png",
+    "image_tip": "Lascia vuoto per il disegno SVG integrato",
+    "show": {
+      "image": "Immagine",
+      "status": "Stato",
+      "battery": "Batteria",
+      "tanks": "Serbatoi",
+      "pills": "Pills",
+      "controls": "Controlli",
+      "footer": "Footer"
+    },
+    "entities": {
+      "battery": "Batteria",
+      "status": "Stato Vacuum",
+      "charging": "In Carica",
+      "online": "Online",
+      "brush_roller": "Brush Roller",
+      "model": "Modello",
+      "fresh_water": "Acqua Pulita",
+      "waste_water": "Acqua Sporca",
+      "firmware": "Firmware",
+      "api_version": "API Version",
+      "cleaning_method": "Metodo Pulizia",
+      "running_speed": "Velocità",
+      "suction_mode_power": "Potenza Aspirazione",
+      "max_mode_power": "MAX Power",
+      "max_mode_spray": "MAX Spray Volume",
+      "sound_volume": "Volume Suono",
+      "water_mode": "Water Mode",
+      "sound_enabled": "Suono On/Off",
+      "floor_brush_light": "Luce Pavimento"
+    }
+  }
+}
