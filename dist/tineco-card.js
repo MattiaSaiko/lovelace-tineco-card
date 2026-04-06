@@ -319,6 +319,7 @@ class TinecoCard extends HTMLElement {
     this._hass = null;
     this._config = {};
     this._ctrlOpen = false;
+    this._lastStateKey = null;
   }
 
   setConfig(config) {
@@ -328,10 +329,29 @@ class TinecoCard extends HTMLElement {
     this._render();
   }
 
-  set hass(hass) { this._hass = hass; this._render(); }
+  set hass(hass) { this._hass = hass; if (!this._hasStateChanged()) return; this._render(); }
   getCardSize() { return 5; }
 
   _lang()      { return this._hass ? (this._hass.language||'en') : 'en'; }
+
+  _stateKey() {
+    if (!this._hass || !this._config) return '';
+    var e = this._config.entities || {};
+    var self = this;
+    var keys = ['battery','status','charging','online','brush_roller','model',
+      'fresh_water','waste_water','firmware','api_version',
+      'cleaning_method','floor_brush_light','max_mode_power','max_mode_spray',
+      'running_speed','sound_enabled','sound_volume','suction_mode_power','water_mode'];
+    return keys.map(function(k){ return e[k] ? (self._hass.states[e[k]] ? self._hass.states[e[k]].state : '') : ''; }).join('|');
+  }
+
+  _hasStateChanged() {
+    var key = this._stateKey();
+    if (key === this._lastStateKey) return false;
+    this._lastStateKey = key;
+    return true;
+  }
+
   _l(path)     { return localize(this._lang(), path); }
   _show(k)     { return this._config[k] !== false; }
   _st(eid)     { if(!eid||!this._hass) return null; return this._hass.states[eid]||null; }
