@@ -9,10 +9,9 @@ Una card Lovelace per Home Assistant che mostra lo stato del tuo aspirapolvere/l
 ### Requisiti
 
 - Home Assistant 2024.8.0 o superiore.
-- Integrazione Tineco installata e configurata.
+- [Tineco Integration](https://github.com/wheeller123/Tineco-Integration) di [@wheeller123](https://github.com/wheeller123) — questa card è il risultato del loro straordinario lavoro! ❤️
 - HACS installato per una gestione semplice degli aggiornamenti (opzionale ma raccomandato).
 - Dashboard Lovelace.
-
 ---
 
 ### Installazione tramite HACS (repository custom)
@@ -145,12 +144,11 @@ entities:
 
 A Lovelace card for Home Assistant that displays the real-time status of your Tineco floor vacuum: operational status with an animated SVG that adapts to the device model, a battery bar with charging animation, fresh and waste water tank levels with color alerts, and a full control panel with dropdowns and toggles.
 
-### Requirements
-
-- Home Assistant 2024.8.0 or higher.
-- Tineco integration installed and configured.
-- HACS installed for easy update management (optional but recommended).
-- Lovelace Dashboard.
+## Requirements
+* Home Assistant 2024.8.0 or higher.
+* [Tineco Integration](https://github.com/wheeller123/Tineco-Integration) by [@wheeller123](https://github.com/wheeller123) installed and configured — this card is built on top of their amazing work! ❤️
+* HACS installed for easy update management (optional but recommended).
+* Lovelace Dashboard.
 
 ---
 
