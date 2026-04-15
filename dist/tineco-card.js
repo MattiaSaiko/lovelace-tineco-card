@@ -120,7 +120,7 @@ function vacuumSVG(accent, isAnimated, batteryPct, freshStatus, wasteStatus) {
   var ww = (wasteStatus||'').toLowerCase();
   var freshFill = fw.indexOf('empty')>=0 ? T.danger : fw.indexOf('low')>=0 ? T.warning : accent;
   var wasteFill = ww.indexOf('full')>=0  ? T.danger : ww.indexOf('high')>=0? T.warning : '#9DB4C0';
-  var batColor  = batteryPct<20 ? T.danger : batteryPct<50 ? T.warning : accent;
+  var batColor  = batteryPct<20 ? T.danger : batteryPct<50 ? T.warning : T.success;
   var batWidth  = Math.max(2,(batteryPct/100)*22);
   var ra        = isAnimated ? 'svgSpin' : 'none';
   var bristles  = [22,29,36,43,50,57,64,71,78,85,92].map(function(x){
@@ -419,7 +419,7 @@ class TinecoCard extends HTMLElement {
     var isCharging = ['on','true'].indexOf((charging||'').toLowerCase())>=0;
     var si         = resolveStatus(status, lang);
     var accent     = modelAccent(model);
-    var bc         = battery<20?T.danger:battery<50?T.warning:accent;
+    var bc         = battery<20?T.danger:battery<50?T.warning:T.success;
     var fw2        = (freshWater||'').toLowerCase();
     var ww2        = (wasteWater||'').toLowerCase();
     var freshColor = fw2.indexOf('empty')>=0?T.danger:fw2.indexOf('low')>=0?T.warning:accent;
@@ -476,7 +476,7 @@ class TinecoCard extends HTMLElement {
           +'<span style="color:'+bc+';font-weight:800">'+battery+'%</span>'
         +'</div>'
         +'<div class="tc-batt-bar">'
-          +'<div class="tc-batt-fill" style="width:'+battery+'%;background:'+(isCharging?T.warning:bc)+(isCharging?';animation:shimmer 1.2s infinite':'')+'">'
+          +'<div class="tc-batt-fill" style="width:'+battery+'%;background:'+bc+'">'
           +'</div></div></div>';
     }
     if (this._show('show_tanks')) {
