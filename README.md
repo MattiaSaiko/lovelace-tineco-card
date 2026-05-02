@@ -1,5 +1,7 @@
 # Tineco Card 🧹
-
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
+[![HA Version](https://img.shields.io/badge/Home%20Assistant-2024.1.0%2B-blue.svg)](https://www.home-assistant.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
 <img width="1024" height="1024" alt="tineco" src="https://github.com/user-attachments/assets/264f8309-0ca0-48a1-92f3-a3355cccc12f" />
 
 ## 🇮🇹 Italiano
